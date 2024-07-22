@@ -1,20 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Meetup</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
-      rel="stylesheet"
-    />
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
@@ -37,14 +26,14 @@
         <img src="./img/search.svg" alt="" class="search__svg" />
       </div>
       <div class="rightside-head">
-        <div class="logo-small">
+        <div class="lodo-small">
           <a href="./index.html"
             ><img src="./img/logo.svg" alt="" class="header-logo-small"
           /></a>
         </div>
         <div class="links-right">
-          <a href="#">
-            <svg
+          <a href="#"
+            ><svg
               width="20"
               height="15"
               viewBox="0 0 20 20"
@@ -66,103 +55,131 @@
       </div>
     </header>
 
-
-    <footer>
-        <div class="footer-container">
-          <div class="footer-header">
-          <p>Create your own Meetup group.</p>
-          <button class="footer-btn">Get Startet</button>
-        </div>
-          <div class="footer-body">
-            <ul class="footer-ul-up">
-        
-              <li>Your Account</li>
-        
-              <li>Sign up</li>
-        
-              <li>Log in</li>
-        
-              <li>Help</li>
-        
-              <li>Become an Affiliate</li>
-        
-            </ul>
-        
-            <ul class="footer-ul-up">
-        
-              <li>Discover</li>
-        
-              <li>Groups</li>
-        
-              <li>Calendar</li>
-        
-              <li>Topics</li>
-        
-              <li>Cities</li>
-        
-              <li>Online Events</li>
-        
-              <li>Local Guides</li>
-        
-              <li>Make Friends</li>
-        
-            </ul>
-        
-            <ul class="footer-ul-up">
-        
-              <li>Meetup</li>
-        
-              <li>About</li>
-        
-              <li>Blog</li>
-        
-              <li>Meetup Pro</li>
-        
-              <li>Careers</li>
-        
-              <li>Apps</li>
-        
-              <li>Podcast</li>
-        
-            </ul>
+    <div class="container">
+      <div class="container_events">
+        <div class="events-list">
+          <h2 class="events-title">Events near New York, NY</h2>
+          <a class="events-small-title" href="#">Events</a>
+          <div class="select-box">
+            <div class="select-item">
+              <select name="" id="any-type">
+                <option value="all">Any type</option>
+                <option value="online">Online</option>
+                <option value="offline">Offline</option>
+                <!-- type -->
+              </select>
+            </div>
+            <div class="select-item">
+              <select name="" id="any-distance">
+                <option value="any">Any Distance</option>
+                <option value="5">5 km</option>
+                <option value="10">10 km</option>
+                <option value="15">15 km</option>
+                <option value="25">25 km</option>
+                <option value="50">50 km</option>
+                <option value="75">75 km</option>
+                <option value="100">100 km</option>
+                <!-- distance -->
+              </select>
+            </div>
+            <div class="select-item">
+              <select name="" id="any-category">
+                <option value="any">Any Category</option>
+                <option value="Social Activities">Social Activities</option>
+                <option value="Hobbies and Passions">
+                  Hobbies and Passions
+                </option>
+                <option value="Health and Wellbeing">
+                  Health and Wellbeing
+                </option>
+                <option value="Business">Business</option>
+                <option value="Technology">Technology</option>
+                <!-- category -->
+              </select>
+            </div>
           </div>
-          <div class="social">
-           <div class="social-header">
-            <p>Follow us</p>
-           </div> 
-           <div class="social-box">
-            <div class="social-left">
-              <img src="./img/facebook.svg" alt="">
-              <img src="./img/twitter.svg" alt="">
-              <img src="./img/youtube.svg" alt="">
-              <img src="./img/instagram.svg" alt="">
-              <img src="./img/tiktok.svg" alt="">
+          <div class="all-events">
+            <!-- js -->
+          </div>
+        </div>
+        <div class="map-container">
+          <div class="maps">
+            <p>Find events near</p>
+            <h2>New York, NY</h2>
+            <div class="map-img">
+              <img class="close-map" src="./img/x.svg" alt="" />
+              <img src="./img/map.png" alt="" />
+              <img class="map-btn" src="./img/map-button.svg" alt="" />
             </div>
-            <div class="social-reight">
-              <img src="./img/google-play.png" alt="">
-              <img src="./img/apple-store.png" alt="">
-            </div>
-           </div>
-        <div class="footer-down">
-          <ul class="footer-ul">
-            <li>© 2024 Meetup</li>
-        
-                      <li>Terms of Service</li>
-        
-                      <li>Privacy Policy</li>
-        
-                      <li>Do Not Sell or Share My Personal Data</li>
-        
-                      <li>Cookie Policy</li>
-        
-                      <li>Help</li>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-header">
+          <p>Create your own Meetup group.</p>
+          <button class="footer-btn">Get started</button>
+        </div>
+        <div class="footer-body">
+          <ul class="footer-ul-up">
+            <li>Your Account</li>
+            <li>Sign up</li>
+            <li>Log in</li>
+            <li>Help</li>
+            <li>Become an Affiliate</li>
+          </ul>
+          <ul class="footer-ul-up">
+            <li>Discover</li>
+            <li>Groups</li>
+            <li>Calendar</li>
+            <li>Topics</li>
+            <li>Cities</li>
+            <li>Online Events</li>
+            <li>Local Guides</li>
+            <li>Make Friends</li>
+          </ul>
+          <ul class="footer-ul-up">
+            <li>Meetup</li>
+            <li>About</li>
+            <li>Blog</li>
+            <li>Meetup Pro</li>
+            <li>Careers</li>
+            <li>Apps</li>
+            <li>Podcast</li>
           </ul>
         </div>
-        
+        <div class="footer-social">
+          <div class="footer-social-header">
+            <p>Follow us</p>
+          </div>
+          <div class="footer-social-box">
+            <div class="social-left">
+              <img src="./img/facebook.svg" alt="" />
+              <img src="./img/twitter.svg" alt="" />
+              <img src="./img/youtube.svg" alt="" />
+              <img src="./img/instagram.svg" alt="" />
+              <img src="./img/tiktok.svg" alt="" />
+            </div>
+            <div class="social-right">
+              <img src="./img/google-play.png" alt="" />
+              <img src="./img/apple-store.png" alt="" />
+            </div>
+          </div>
+          <div class="footer-down">
+            <ul class="footer-ul">
+              <li>© 2024 Meetup</li>
+              <li>Terms of Service</li>
+              <li>Privacy Policy</li>
+              <li>Do Not Sell or Share My Personal Data</li>
+              <li>Cookie Policy</li>
+              <li>Help</li>
+            </ul>
           </div>
         </div>
-        
-            </footer>
+      </div>
+    </footer>
 
-</body>
+    <script type="module" src="script.js"></script>
+  </body>
 </html>
